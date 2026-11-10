@@ -1,0 +1,130 @@
+/* Phase 3 visual identity restored: vivid heading colors, gradient navigation,
+   playful outlines, rounded highlights; page backgrounds remain plain white. */
+:root { --sun:#ffbf35; --tangerine:#fe942a; --coral:#ff6d49; --pink:#df4da7; --violet:#b223d3; --deep-violet:#8135bb; --brand-gradient: linear-gradient(105deg,#ffb735 0%,#ff9162 39%,#e754a1 70%,#a82ed0 100%); }
+html { scroll-padding-top: 88px; }
+body { background:#fff; color:#34293c; }
+.site-header, .site-header .navbar { background: var(--brand-gradient) !important; border:0; }
+.site-header { box-shadow: 0 7px 20px rgba(98,27,91,.2); }
+.navbar { min-height: 72px; }
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus { color: #fff; font-weight: 800; letter-spacing: -.055em; text-shadow: 0 2px 7px rgba(87,12,72,.22); }
+.brand-dot { color: #ffe869; }
+.navbar .nav-link, .navbar .nav-link:hover, .navbar .nav-link:focus { color: #fff; font-weight: 800; text-shadow: 0 1px 3px rgba(83,28,71,.25); }
+.navbar .nav-link.active { color: #fff; background: rgba(255,255,255,.19); box-shadow: none; border-radius: 40px; }
+.navbar .nav-link:hover { background:rgba(255,255,255,.12); border-radius:40px; }
+.navbar-toggler { border: 2px solid rgba(255,255,255,.9); background:rgba(255,255,255,.85); }
+.page-section { background:#fff !important; border:0 !important; padding:92px 0; }
+.home-section { padding-top:86px; }
+.page-section + .page-section { border-top: 1px solid #f0e6f0 !important; }
+.eyebrow { color:#b33fac; letter-spacing:.15em; font-weight:800; }
+h1, h2, h3, h4 { font-family: Outfit, 'DM Sans', sans-serif; }
+#homeTitle, #aboutTitle, #eventsTitle, #galleryTitle, #joinTitle, #contactTitle, .collaborate h3 { background:var(--brand-gradient); background-clip:text; -webkit-background-clip:text; color:transparent; -webkit-text-fill-color:transparent; font-weight: 800; line-height:1.11; letter-spacing:-.035em; overflow-wrap:break-word; }
+#homeTitle { font-size:clamp(3.3rem,6.7vw,6.3rem); max-width: 1050px; margin-bottom:12px; }
+#aboutTitle,#eventsTitle,#galleryTitle,#joinTitle,#contactTitle { font-size:clamp(3rem,5.1vw,5.15rem); margin-bottom:17px; }
+.section-intro { max-width: 1020px; margin-bottom: 46px; }
+.section-intro .lead, .hero-copy .lead { font-size: clamp(1.15rem,1.8vw,1.6rem); color:#49384c; }
+.hero-copy { max-width: 1080px; padding: 34px 0 75px; }
+.page-section h3:not(.art-card h3):not(.event-card h3):not(.benefit-card h4) { color:#c339a5; font-weight:800; }
+.section-subhead { margin-bottom:29px; }
+.section-subhead h2, .section-subhead h3 { font-weight:800; background:linear-gradient(100deg,#ffae2a,#dd409f 80%); background-clip:text;-webkit-background-clip:text; color:transparent !important; -webkit-text-fill-color:transparent; }
+.section-subhead h2 { font-size: clamp(2rem,3.5vw,3rem); }
+.btn, .filter-btn { border-radius:999px; font-weight:800; letter-spacing:.005em; }
+.btn-brand { color:#fff; border: 0; background: var(--brand-gradient); box-shadow: 0 6px 17px rgba(178,35,167,.2); }
+.btn-brand:hover, .btn-brand:focus-visible { color:#fff !important; background: linear-gradient(105deg,#fa9f29,#e94b83,#8f21c7) !important; border-color:transparent !important; transform:translateY(-1px); }
+.btn-outline-brand { color:#c448a4; border:2px solid #dd78b4; background:#fff; }
+.btn-outline-brand:hover { background:var(--brand-gradient) !important; color:#fff !important; border-color:#e45c9d !important; }
+.text-link { color:#b8309f; }
+.text-link:hover { color:#f0872a; }
+.art-card,.event-card { background:#fff; border:3px solid #fff; border-radius:19px; box-shadow: 0 0 0 2px #ee78bd, 0 10px 26px rgba(106,37,112,.09); }
+.art-card:hover,.event-card:hover { box-shadow:0 0 0 2px #ffab37,0 12px 30px rgba(115,40,111,.15); }
+.art-media,.event-media { background:#fdf8ff; border-bottom:2px solid #f4c0de; }
+.image-placeholder { background:#fff8ff; color:#9a5c9d; }
+.placeholder-frame { color:#e29ac2; border-color:#e9adce; }
+.art-card h3,.event-card h3 { color:#ad328e !important; font-weight:800; }
+.art-card-body,.event-card-body { text-align:center; }
+.art-card .artist-credit,.event-card p { color:#6c536e; }
+.art-category { color:#d84c9b; }
+.notice-card,.submission-callout { background:#fff; border:2px solid #f3a6d6; border-radius:22px; box-shadow: 0 8px 20px rgba(185,56,146,.07); }
+.notice-card h2,.submission-callout h3 { color:#e05a9f !important; }
+.info-card { border:2px solid #e798ca; border-top:6px solid #ffab34; border-radius:22px; box-shadow: 0 8px 24px rgba(136,44,131,.08); }
+.info-card:nth-child(2n) { border-top-color:#b83dc5; }
+.info-card h3 { font-size:2rem; text-transform:uppercase; }
+.static-media { border:3px solid #f9a9d5; border-radius:18px; background:#fff7fe; }
+.filter-bar { gap:10px; margin-bottom:46px; }
+.filter-btn { color:#b356a0; border:2px solid #f0bedc; background:#fff; }
+.filter-btn:hover { color:#b32ea2; border-color:#d866ba; }
+.filter-btn.selected { color:#fff; background:var(--brand-gradient); border-color:#e67dab; }
+.meta-label { color:#c14b9f; border-color:#efc0d9; font-weight:800; }
+.empty-state { border:2px dashed #e2a3d2; background:#fff; }
+.benefit-card { border:3px solid #eab1db; border-radius:999px; padding:20px 26px; justify-content:center; background:#fff; }
+.benefit-card h4 { color:#ca52a6; font-size:1.25rem; }
+.benefit-card > span { color:#f49c2d; font-weight:800; }
+.contact-form { border:2px solid #efabcf; border-radius:25px; padding:35px; }
+.contact-details dt { color:#c346a0; }
+.contact-details dd a { color:#34293c; font-weight:500; text-decoration:none; transition:color .2s ease; }
+.contact-details dd a:hover, .contact-details dd a:focus-visible { color:#c23b9d; text-decoration:underline; text-underline-offset:3px; }
+.social-chip { border:2px solid #e5abd1; color:#c44aa7; font-weight:800; }
+.form-control,.form-select { border-radius:999px; border:2px solid #b7a2b9; }
+textarea.form-control { border-radius:20px; }
+.form-control:focus,.form-select:focus { border-color:#c447a6; box-shadow:0 0 0 .2rem rgba(214,73,154,.13); }
+.form-label { color:#bc469d; }
+.collaborate h3 { font-size:clamp(2.3rem,4.6vw,4.5rem); text-transform:uppercase; }
+.site-footer { border-top:5px solid #ee90c0; background:#fff; }
+.site-footer strong { color:#d049a5; }
+.modal-content { border:3px solid #e69ec7; }
+.modal-header { border-bottom:2px solid #efc3dd; }
+.modal-title { color:#c43ca3; }
+.submission-result { border-color:#e69ec7; }
+@media(max-width:991.98px) {
+  .navbar .nav-link.active { box-shadow:none; background:rgba(255,255,255,.24); }
+  .page-section { padding:70px 0; }
+  .home-section { padding-top:65px; }
+  .hero-copy { padding-bottom:55px; }
+}
+@media(max-width:575.98px) {
+  #homeTitle { font-size:clamp(2.7rem,11.6vw,4rem); }
+  #aboutTitle,#eventsTitle,#galleryTitle,#joinTitle,#contactTitle { font-size:clamp(2.5rem,10vw,3.4rem); }
+  .page-section { padding:56px 0; }
+  .benefit-card { border-radius:26px; justify-content:flex-start; }
+  .contact-form { padding:22px; }
+  .info-card h3 { font-size:1.5rem; }
+}
+/* Enlarged art category heading matches the reference's DIGITAL ART title. */
+#galleryCategoryTitle { font-size:clamp(1.9rem,3.4vw,3rem); text-transform:uppercase; color:#d74b9f !important; }
+
+/* Small contact/social icons only; existing FEUARTS design is unchanged. */
+.contact-icon { width:19px; height:19px; display:inline-block; vertical-align:-4px; margin-right:8px; }
+.social-icon { width:19px; height:19px; display:inline-block; vertical-align:-4px; margin-right:7px; }
+
+/* Supplied assets: additional positioning only. Existing visual design preserved. */
+.hero-layout { display:grid; grid-template-columns:minmax(0, 1.55fr) minmax(200px, .65fr); gap:clamp(16px,3vw,48px); align-items:center; }
+.hero-layout .hero-copy { min-width:0; padding-bottom:75px; }
+.hero-logo-panel { display:flex; align-items:center; justify-content:center; min-width:0; padding:10px; }
+.hero-logo-image { width:100%; max-width:360px; max-height:320px; height:auto; object-fit:contain; display:block; }
+.social-icon-png { width:20px; height:20px; object-fit:contain; vertical-align:middle; flex:none; }
+@media (max-width:767.98px) {
+ .hero-layout { grid-template-columns:1fr; gap:0; }
+ .hero-layout .hero-copy { padding-bottom:20px; }
+ .hero-logo-panel { max-width:260px; margin:0 auto 35px; }
+}
+
+/* Requested logo-only refinements: preserve the rest of the approved design. */
+/* The source PNG contains generous transparent margins; a slightly taller
+   image makes the visible emblem easier to recognize in the gradient header. */
+.navbar-brand .brand-logo {
+  height: 70px;
+  width: 70px;
+  margin-right: 3px;
+  object-fit: contain;
+  filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff)
+          drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
+}
+/* Position the larger hero emblem beside the headline, not midway down the
+   entire left-hand block (which also includes the buttons). */
+@media (min-width: 768px) {
+  .hero-logo-panel { align-self: start; margin-top: 0; }
+}
+
+/* Event poster links: preserve original image appearance. */
+.event-poster-link { display:block; color:inherit; text-decoration:none; }
+.event-poster-link:hover { color:inherit; }
+.event-poster-link:focus-visible { outline:3px solid #6a46c7; outline-offset:3px; border-radius:12px; }
